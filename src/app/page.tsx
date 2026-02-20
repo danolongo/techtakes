@@ -1,4 +1,5 @@
 import CreateTake from '@/components/create-take'
+import TrendingAiNews from '@/components/trending-ai-news'
 import Feed from '@/components/feed'
 import HeroSection from '@/components/hero-section'
 import { createClient } from '@/utils/supabase/server'
@@ -13,6 +14,9 @@ export default async function Home() {
       <HeroSection isLoggedIn={!!user} />
 
       <CreateTake user={user} />
+
+      <TrendingAiNews />
+
 
       <div>
         <div className="flex items-center gap-4 mb-8">
